@@ -1,0 +1,539 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*
+DESENVOLVIMENTO DE RESPONSIVIDADE CABEÇALHO!
+*/
+
+/* @media screen and (max-width:600px) {
+    .dropdown {
+        display: block;
+    }
+
+    .container-header .ajuda ul {
+        display: none;
+    }
+} */
+
+@media (min-width: 1024px) {
+
+    .dropdown {
+        display: none;
+    }
+
+    .ajuda {
+        display: flex;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    .dropdown {
+        display: flex;
+    }
+
+
+    .ajuda {
+        display: none;
+    }
+
+}
+
+.ajuda ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: #fff;
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+    border-radius: 10px;
+}
+
+.ajuda a
+{
+    color: #fff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    border-radius: 1rem;
+    /* background-color: rgb(99, 219, 119);  */
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+    top: 3.5rem;
+    color: #fff;
+    /* offset-position: 0px 50px; */
+}
+
+.dropdown-content ul li a{
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 
+.dropdown
+{
+    display: none;
+} */
+
+
+
+
+/*
+DESENVOLVIMENTO DO CABEÇALHO!
+ */
+
+#ccard
+{
+
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    padding: 1rem;
+    width: 100%;
+    height: 5rem;
+    /* background-color: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%)); */
+    /* background-color: rgb(75, 23, 117); */
+    background-color : rgb(148, 221, 39); 
+    color: #3D3A34;
+    /* border: 2px solid black; */
+}
+
+.container-header ul {
+    list-style-type: none;
+
+    /* São os li que devem se comportar
+        como elementos inline.
+     display: inline; */
+
+}
+
+.container-header h1 {
+    /* border: 1px solid black; */
+    text-shadow: 3px 3px #fff;
+}
+
+.container-header ul li {
+    display: block;
+    padding: 0.6rem;
+    /* border: 1px solid black; */
+    border-radius: 0.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*
+    | FIM DESENVOLVIMENTO DO CABEÇALHO! |
+ */
+
+
+/* 
+    | CONTEÚDO 1 DE APRESENTAÇÃO PÓS HEADER|
+ */
+
+
+.container-conteudo1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 88vh;
+    margin: auto;
+    /* margin-top: 2rem; se quiser dar margem do topo
+    lembre-se dele vir dps, p não anular o margin: auto */
+    background-color: #1f1d18;
+}
+
+.container-conteudo1 .central {
+    /* height: inherit; herdar altura do container pai */
+    border: 0.2rem solid greenyellow;
+    border-radius: 2.5rem;
+    /* background-color: red; */
+    /* height: 10rem; */
+    width: 80%;
+    color: #fff;
+}
+
+
+
+.central h1 {
+    text-align: center;
+    padding: 2%;
+}
+
+.central p {
+    text-align: center;
+    padding: 1%;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* 
+    | FIM CONTEÚDO 1 DE APRESENTAÇÃO PÓS HEADER|
+ */
+
+
+/* 
+    | CONTEÚDO 2 DE APRESENTAÇÃO CARDS|
+ */
+
+#ccard {}
+
+.container-cards {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%;
+    /* height: 80vh;  AJUSTE FINO NA RESPONSIVIDADE*/
+    margin: auto;
+    background-color: rgb(148, 221, 39);
+
+    /* att */
+    flex-direction: column; 
+}
+
+.central-cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 80%;
+    /* height: 80%; */
+    /* background-color: #fff; */
+    max-width: 800px;
+
+    /* att */
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    
+    padding-block: 40px;
+    padding-inline: 20px;
+
+    /* margin: auto; */
+    /* flex-direction: row;
+    por padrão virá como row */
+}
+
+.titulocards h1
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-shadow: 2px 2px rgb(34, 28, 28);
+    color: #fff;
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+}
+
+.card
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    width: 12rem;
+    height: 16rem; 
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+    /* background-color: aqua; */
+    margin: auto;
+    margin-top: 0.5rem;
+    color: #3D3A34;
+    border-radius: 18px;
+
+    /* att */
+}
+
+.card .logo
+{
+     width: 100%;
+     /*
+    border: 2px solid yellow;
+    margin-top: 0;
+    justify-content: center; */
+
+    /* justify-content: end; */
+    /* align-items: flex-start; */
+    /* display: flex; */
+}
+
+.card .logo img
+{
+    height: 120px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border: 2px solid yellow; */
+}
+
+.card .texto
+{
+    width: 100%;
+    /* margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin: 1rem; */
+}
+
+.card .texto p
+{
+    margin: auto;
+    text-align: center;
+    padding: 0.2rem;
+    color: #fff;
+    height: 4.5rem;
+}
+
+.card .botaoenviar
+{
+    width: 100%;
+    /* height: 60px;  */
+}
+
+/* .botaoenviar a
+{
+    color: #fff;
+    position: absolute;
+    /* top: 0.1rem; */
+    /* right: 1px; */
+    /* text-align: center; 
+    display: flex;
+    align-items: top;
+    justify-content: center;
+} */
+
+.card .botaoenviar a
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+    /* background-color: #ECA71C; */
+    border: 0.2rem solid hsl(268, 96%, 27%);
+    /* border: 2px solid purple; */
+    padding: 5px 20px;
+    height: 45px;
+    width: 100%;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+/* 
+    | FIM CONTEÚDO 2 DE APRESENTAÇÃO CARDS|
+ */
+
+
+/* 
+    | CONTEÚDO 3 DE APRESENTAÇÃO SOBRE MIM|
+ */
+
+#sobre
+{
+
+}
+
+@media screen and (max-width: 800px) {
+    .sobre {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    /* margin-top: 2rem; */
+    width: 100%;
+    background-color: #1f1d18;
+    /* justify-content: space-between; */
+    /* height: 50vh; */
+}
+
+.sobre img {
+    /* padding: 1rem; */
+    /* border-radius: 15rem; */
+    height: 80%;
+    width: 30%;
+    margin: 2rem;
+    border-radius: 3rem;
+    border: 3px solid #ECA71C;
+}
+
+.sobre p {
+    padding: 1.2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    width: 60%;
+    margin: 2rem;
+    border: 3px solid #ECA71C;
+    border-radius: 1rem;
+}
+
+/* 
+    | FIM CONTEÚDO 3 DE APRESENTAÇÃO SOBRE MIM|
+ */
+
+
+
+/* 
+    | CONTEÚDO 4 DE APRESENTAÇÃO NEWSLETTER|
+ */
+
+#mecontate 
+{
+
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    /* margin-top: 3rem; */
+    width: 100%;
+    /* height: 80vh; */
+    background-color: rgb(148, 221, 39);
+}
+
+
+.formulario {
+    margin: 1rem;
+    /* display: block; */
+    width: 70%;
+    color: #3D3A34;
+    align-items: center;
+    text-align: center;
+}
+
+.formulario h2 {
+    padding: 0.5rem;
+}
+
+.formulario p {
+    margin-top: 0.1rem;
+    margin-bottom: -0.3rem;
+    font-style: italic;
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+    /* background: #FFE4C4; */
+    margin: 1rem;
+    border-radius: 1.5rem;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    width: 46.5%;
+    border-radius: 0.5rem;
+    height: 1.6rem;
+}
+
+textarea {
+    width: 50%;
+    max-width: 400px;
+    max-height: 200px;
+    border-radius: 0.5rem;
+}
+
+input.radio,
+input.checkbox,
+input.submit {
+    width: auto;
+}
+
+input.radio p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.radio margin-right {
+    margin-right: 1rem;
+}
+
+.botao {}
+
+input.submait {
+    text-align: center;
+    color: #fff;
+    background-color: #3D3A34;
+    border: 0.2rem solid hsl(268, 96%, 27%);
+    padding: 5px 20px;
+    height: 45px;
+    width: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+    margin-bottom: 1rem;
+}
+
+
+
+/* 
+    | FIM  CONTEÚDO 4 DE APRESENTAÇÃO NEWSLETTER|
+ */
+
+
+/* 
+    | CONTEÚDO 5 DE APRESENTAÇÃO FOOTER|
+ */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    background: linear-gradient(to bottom, #3D3A34, hsl(268, 96%, 27%));
+    color: #3D3A34;
+    /* height: 10rem; */
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+    /* margin-top: 2rem; */
+}
+
+.footer p {
+    margin: 1.1rem;
+    padding: 0.4rem;
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 3px 3px rgb(12, 11, 11);
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 1rem;
+    padding-top: 1rem;
+}
