@@ -1,8 +1,11 @@
-# Full-Stack-Serratec
-Qualification program in the areas of Software Development and Network Infrastructure, agile and immersive, conceptual-practical, for 5 months, free of charge and of high socioeconomic impact in the Serrana Region of the State of Rio de Janeiro, operated by Serratec.
+# Trabalho de Front End Essencial 
+## Residência em TIC/Software SERRATEC
+### Grupo 2 | Mateus, Amanda, Samuel, Simone, Jéssica, Bernardo
 
-<div align = "center">
-  
-![download](https://user-images.githubusercontent.com/87822546/166123957-1e33bb7e-4f32-4449-b6b6-2d4b039d9b51.png)
-  
-</div>
+#### Navbar, Footer, Cards no Index, CSS Main (navbar.js, navbar.css, footer.css, HTML Navbar & Footer, index.css, main.css, index.html) por Mateus Reis.
+#### Página de Contato (contact.html, contact.css) por Samuel.
+#### Página Sobre (about.html, about.css) por Simone, revisão por Mateus Reis.
+#### Carrosel no Index (div app no index.html, carousel.css, carousel.js) por Amanda Bervilato, revisão por Mateus Reis.
+#### Tela de Login por Jéssica Sabino.
+
+### Professor Abner Jóia
