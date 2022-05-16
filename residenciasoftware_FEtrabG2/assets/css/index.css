@@ -1,0 +1,351 @@
+.section-filmes {
+    background-image: url(../img/filmesbgmobile.jpg);
+    background-size: cover;
+    background-position-x: -240px;
+}
+
+.section-games {
+    background-image: url(../img/gamesbgmobile.jpg);
+    background-size: cover;
+    background-position-x: -240px;
+}
+
+.section-animes {
+    background-image: url(../img/animesbg.jpg);
+    background-size: cover;
+    background-position-x: -1935px;
+}
+
+.container-filmes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px;
+    padding-inline: 30px;
+    background-color: var(--bgmain2);
+    width: 100%;
+    border-top: 2px solid var(--txtmain);
+    border-bottom: 2px solid var(--txtmain);
+}
+
+.container-games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px;
+    padding-inline: 30px;
+    background-color: var(--bgmain3);
+    width: 100%;
+    border-bottom: 2px solid var(--txtmain);
+}
+
+.container-animes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 40px;
+    padding-inline: 30px;
+    background-color: var(--bgmain4);
+    width: 100%;
+    border-bottom: 2px solid var(--txtmain);
+}
+
+.filmes-title, .games-title, .animes-title {
+    margin-bottom: 40px;
+    color: var(--txtmain);
+    text-shadow: 0px 0px 2px var(--txtmain);
+}
+
+.filmes-title h1, .games-title h1, .animes-title h1 {
+    font-size: 30px;
+}
+
+.filmes, .games, .animes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.filmes-card, .games-card, .animes-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    height: 380px;
+    background-color: var(--bgmain3);
+    box-shadow: 0px 0px 20px var(--bgmain);
+    transition: 0.3s;
+}
+
+.filmes-card:hover, .games-card:hover, .animes-card:hover {
+    transform: scale(110%);
+}
+
+.filmes-card-img1, .filmes-card-img2, .filmes-card-img3, .filmes-card-img4, .filmes-card-img5, 
+.filmes-card-img6, .games-card-img1, .games-card-img2, .games-card-img3, .games-card-img4, 
+.games-card-img5, .games-card-img6, .animes-card-img1, .animes-card-img2, .animes-card-img3, 
+.animes-card-img4, .animes-card-img5, .animes-card-img6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.filmes-card-img1 a, .filmes-card-img2 a, .filmes-card-img3 a, .filmes-card-img4 a, .filmes-card-img5 a, 
+.filmes-card-img6 a, .games-card-img1 a, .games-card-img2 a, .games-card-img3 a, .games-card-img4 a, 
+.games-card-img5 a, .games-card-img6 a, .animes-card-img1 a, .animes-card-img2 a, .animes-card-img3 a, 
+.animes-card-img4 a, .animes-card-img5 a, .animes-card-img6 a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.filmes-card-text, .games-card-text, .animes-card-text {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 0%;
+    font-size: 14px;
+}
+
+.filmes-card-text a, .games-card-text a, .animes-card-text a {
+    color: var(--txtmain);
+    background-color: var(--bgtransparent);
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+    padding: 6px;
+    width: 100%;
+}
+
+.filmes-card-text p, .games-card-text p, .animes-card-text p {
+    color: var(--txtlow);
+    background-color: var(--bgtransparent);
+    text-align: justify;
+    padding: 6px;
+    width: 100%;
+}
+
+.filmes-card-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -250px 0;
+}
+
+.filmes-card-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -275px 0;
+}
+
+.filmes-card-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -275px 0;
+}
+
+.filmes-card-img4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -170px 0;
+}
+
+.filmes-card-img5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -400px 0;
+}
+
+.filmes-card-img6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -50px 0;
+}
+
+.games-card-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -210px 0;
+}
+
+.games-card-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -250px 0;
+}
+
+.games-card-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -190px 0;
+}
+
+.games-card-img4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -170px 0;
+}
+
+.games-card-img5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -190px 0;
+}
+
+.games-card-img6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -200px 0;
+}
+
+.animes-card-img1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -190px 0;
+}
+
+.animes-card-img2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -60px 0;
+}
+
+.animes-card-img3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -50px 0;
+}
+
+.animes-card-img4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -220px 0;
+}
+
+.animes-card-img5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -92px 0px;
+}
+
+.animes-card-img6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: -190px 0;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 375px) {
+    .section-animes {
+        background-position-x: -1905px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .section-animes {
+        background-position-x: -1875px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filmes, .games, .animes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .filmes-title h1, .games-title h1, .animes-title h1 {
+        font-size: 32px;
+    }
+
+    .section-filmes {
+        background-image: url(../img/filmesbg.jpg);
+        background-position-x: -750px;
+    }
+
+    .section-games {
+        
+        background-position-x: -700px;
+    }
+
+    .section-animes {
+        background-image: url(../img/animesbg.jpg);
+        background-position-x: -750px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-filmes, .section-animes {
+        background-position-x: -280px;
+    }
+
+    .section-games {
+        background-image: url(../img/gamesbg.jpg);
+        background-position-x: -280px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .filmes-title h1, .games-title h1, .animes-title h1 {
+        font-size: 36px;
+    }
+
+    .section-filmes, .section-games, .section-animes {
+        background-position-x: -140px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .filmes, .games, .animes {
+        gap: 90px;
+    }
+
+    .section-filmes {
+        background-position-x: -105px;
+    }
+
+    .section-animes {
+        background-position-x: -70px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .section-filmes, .section-games, .section-animes {
+        background-position-x: 0px;
+    }
+}

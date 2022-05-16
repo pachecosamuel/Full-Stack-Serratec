@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Montserrat;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bgmain: #101010;
+    --bgmain2: #64134d9d;
+    --bgmain3: #332a968e;
+    --bgmain3strong: #332a96e7;
+    --bgmain4: #000018d3;
+
+    --bgnavbar: #070707;
+    --bgtransparent: #101010aa;
+    --bgfooter: #070707;
+
+    --txtmain: aliceblue;
+    --txtmain2: #ccadf0;
+    --txtlow: #f0f8ff75;
+
+    --shadowmain: #b749f7;
+}
+
+body {
+    background-color: var(--bgnavbar);
+    display: flex;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-header-main {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    width: 100%;
+}
+
+.container-header-main {
+    background-color: var(--bgtransparent);
+    width: 100%;
+    height: 100vh;
+    padding-inline: 30px;
+    padding-bottom: 60px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 375px) {
+    .bg-header-main {
+        background-position-y: -50px;
+    }
+}
+
+@media screen and (min-width: 425px) {
+    .bg-header-main {
+        background-position-y: -100px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bg-header-main {
+        background-position-y: -500px;
+    }
+
+    .filmes, .games, .animes {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .filmes-title h1, .games-title h1, .animes-title h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bg-header-main {
+        background-position-y: -700px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .bg-header-main {
+        background-position-y: -900px;
+    }
+
+    .filmes-title h1, .games-title h1, .animes-title h1 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .bg-header-main {
+        background-position-y: -1100px;
+    }
+
+    .filmes {
+        gap: 90px;
+    }
+}

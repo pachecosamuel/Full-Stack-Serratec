@@ -1,0 +1,42 @@
+.container-footer {
+    background-color: var(--bgfooter);
+    color: var(--txtmain);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding-inline: 40px;
+    padding-block: 20px;
+}
+
+.footer-left-top {
+    font-weight: bold;
+}
+
+.footer-left-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 8px;
+}
+
+.footer-left-bottom a {
+    color: var(--txtmain);
+    transition: 0.3s;
+}
+
+.footer-left-bottom a:hover {
+    transform: scale(110%);
+}
+
+.footer-right img {
+    width: 50px;
+}
+
+.footer-right {
+    transition: 0.3s;
+}
+
+.footer-right:hover {
+    transform: scale(110%);
+}
